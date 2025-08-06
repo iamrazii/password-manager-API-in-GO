@@ -26,7 +26,9 @@
 1.User logs in and receives a JWT token.
 
 2.The frontend must attach the token in the Authorization header for protected routes:
+   
     Authorization: Bearer <token>
+
 
 3.Middleware verifies this token, extracts the user_id, and injects it into the context for route handlers.
 
