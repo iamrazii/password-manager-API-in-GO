@@ -1,8 +1,10 @@
 🔐 Passman API – Password Manager Backend:
+ 
  Password manager API built with Go (gin framework) and Microsoft SQL Server. It supports user authentication via JWT tokens and enables users to securely store, retrieve, update, and delete their passwords — all on protected routes.
 
 
  ⚙️ Features
+
 . User registration & login
 
 . JWT-based authentication
@@ -17,6 +19,7 @@
 
 
 🔑 JWT Authentication Flow
+
 1.User logs in and receives a JWT token.
 
 2.The frontend must attach the token in the Authorization header for protected routes:
