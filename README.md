@@ -4,6 +4,8 @@
 
 
 
+
+
  
  ⚙️ Features
 
@@ -23,9 +25,15 @@
 
 
 
+
+
+
 🔑 JWT Authentication Flow
 
+
+
 1.User logs in and receives a JWT token.
+
 
 2.The frontend must attach the token in the Authorization header for protected routes:
    
@@ -33,5 +41,6 @@
 
 
 3.Middleware verifies this token, extracts the user_id, and injects it into the context for route handlers.
+
 
 4.All operations like password creation or retrieval are scoped to the authenticated user.
