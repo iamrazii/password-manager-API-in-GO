@@ -8,16 +8,12 @@ import (
 	"time"
 
 	_ "github.com/denisenkom/go-mssqldb"
-	"github.com/joho/godotenv"
 )
 
 var DB *sql.DB // pointer to sql connection pool
 
 func InitializeDB() {
-	err := godotenv.Load() // loading .env file for db data
-	if err != nil {
-		log.Fatal("Error while opening .env file")
-	}
+
 	dbUser := os.Getenv("DB_USER")
 	dbPassword := os.Getenv("DB_PASSWORD")
 	dbHost := os.Getenv("DB_HOST")
