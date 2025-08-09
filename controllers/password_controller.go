@@ -62,7 +62,7 @@ func UpdatePassword(c *gin.Context) {
 	query := `
 UPDATE passwords 
 SET password = @password 
-WHERE id = @passwordID AND user_id = @userID
+WHERE id = @passwordID AND userid = @userID
 `
 	_, err = config.DB.Exec(query,
 		sql.Named("password", newpassword.Password),
